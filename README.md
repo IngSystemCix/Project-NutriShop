@@ -1,5 +1,13 @@
 # NutriShop Online Store
 
+## 👨🏻‍💻 DESARROLLADORES
+
+- Romero Collazos, Juan Bladimir
+- Martinez Vidaurre, Briggitte del Milagro
+- Ramos Marrufo, Daniel David
+- Brenis Perez, Romina Alexandra
+- Fupuy Chaname, Jorge Hugo
+
 ## 1. Introducción
 NutriShop es una tienda en línea dedicada a la venta de productos nutritivos. Este documento proporciona información sobre la configuración, desarrollo, uso y mantenimiento de la tienda en línea.
 
