@@ -57,6 +57,69 @@ NutriShop es una tienda en línea dedicada a la venta de productos nutritivos. E
   - Abrir el navegador web y acceder a [phpMyAdmin](http://localhost/phpmyadmin).
   - Crear una nueva base de datos o seleccionar una base de datos existente.
   - Usar la opción "Importar" para cargar el archivo SQL de la base de datos de NutriShop.
+- **Composer**
+  - Descargar [Composer](https://getcomposer.org/Composer-Setup.exe)
+- **Node.js**
+  - Descargar [Node.js](https://nodejs.org/en)
+  - escribir los siguientes comandos en el proyecto:
+    ```
+    npm init -y
+    npm install tailwindcss postcss autoprefixer
+    npx tailwindcss init
+    npm install -g win-node-env
+    npm install -D postcss-cli
+    ```
+    ### **configuracion de tailwind.config.js**
+
+    ```
+    /** @type {import('tailwindcss').Config} */
+    module.exports = {
+      darkMode: "class",
+      content: [
+        "*.php",
+        "app/view/**/*.{php,js}"
+      ],
+      theme: {
+        extend: {
+          backgroundColor: {
+            "blue-gray": "#688FAF",
+            "indigo": "#27348b",
+            "orange-light": "#fa900a",
+            "green-dark": "#00bf63",
+            "white-bone": "#eff6ff",
+            "dark-gray": "#191919",
+            "red-light": "#ff3131"
+          },
+          colors: {
+            "blue-gray": "#688FAF",
+            "indigo": "#27348b",
+            "orange-light": "#fa900a",
+            "green-dark": "#00bf63",
+            "white-bone": "#eff6ff",
+            "dark-gray": "#191919",
+            "red-light": "#ff3131"
+          }
+        },
+      },
+      plugins: [],
+    }
+    ```
+    ### **Configuración de postcss.config.js**
+    ```
+    module.exports = {
+      plugins: {
+        tailwindcss: {},
+        autoprefixer: {},
+      },
+    };
+    ```
+    ## **Agregar esto en package.json**
+    ```
+    "scripts": {
+      "build:tailwind": "npx tailwindcss -i ./app/view/css/tailwind.css -o ./app/view/css/main.css --watch",
+      "build:production": "NODE_ENV=production postcss ./app/view/css/tailwind.css -o ./app/view/css/main.css"
+    },
+    ```
 
 ## 4. Uso del Sistema
 
@@ -105,6 +168,16 @@ El proceso de actualización del sistema es crucial para mantener la tienda en l
 - ![Static Badge](https://img.shields.io/badge/tailwindcss-%2306B6D4?style=for-the-badge&logo=tailwindcss&logoColor=%23fff)
 - ![Static Badge](https://img.shields.io/badge/postcss-%23DD3A0A?style=for-the-badge&logo=postcss&logoColor=%23fff)
 - ![Static Badge](https://img.shields.io/badge/nodedotjs-%235FA04E?style=for-the-badge&logo=nodedotjs&logoColor=%23fff)
+
+## 7. Librerias
+
+### phpdotenv
+
+Es una biblioteca para PHP que facilita la gestión de configuraciones de entorno mediante archivos .env. Este enfoque ayuda a mantener las configuraciones sensibles, como credenciales de bases de datos, claves API y otras variables de entorno, fuera del código fuente, lo que mejora la seguridad y la flexibilidad del desarrollo.
+
+### Eloquent
+
+Eloquent es el ORM que viene con el framework Laravel. Sin embargo, también puede ser utilizado fuera de Laravel.
 
 ---
 
