@@ -59,6 +59,9 @@ NutriShop es una tienda en línea dedicada a la venta de productos nutritivos. E
   - Usar la opción "Importar" para cargar el archivo SQL de la base de datos de NutriShop.
 - **Composer**
   - Descargar [Composer](https://getcomposer.org/Composer-Setup.exe)
+  ```
+  composer init
+  ```
 - **Node.js**
   - Descargar [Node.js](https://nodejs.org/en)
   - escribir los siguientes comandos en el proyecto:
