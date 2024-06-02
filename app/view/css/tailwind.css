@@ -1,0 +1,61 @@
+@import url("https://fonts.googleapis.com/css2?family=Teko:wght@300..700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer {
+  .teko-regular {
+    font-family: "Teko", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+  }
+  .anton-regular {
+    font-family: "Anton", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  .cairo-regular {
+    font-family: "Cairo", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings: "slnt" 0;
+  }
+
+  .btn_navbar_normal {
+    @apply text-white-bone w-full px-3 py-2 font-bold flex justify-start items-center gap-4 cursor-pointer;
+    letter-spacing: 2px;
+  }
+
+  .btn_navbar_special {
+    @apply text-orange-light w-full px-3 py-2 font-bold flex justify-start items-center gap-4 cursor-pointer;
+    letter-spacing: 2px;
+  }
+
+  .btn_navbar_mobile_normal {
+    @apply text-white-bone h-full px-3 py-2 font-bold flex justify-start items-center cursor-pointer;
+  }
+
+  .btn_navbar_mobile_special {
+    @apply text-orange-light h-full px-3 py-2 font-bold flex justify-start items-center cursor-pointer;
+  }
+  .btn_activate_desktop::before {
+    content: '';
+    @apply absolute bottom-0 left-0 w-full h-1 sm:top-0 sm:left-0 sm:h-full sm:w-1 bg-white-bone;
+  }
+  .btn_activate_desktop_especial::before {
+    content: '';
+    @apply absolute bottom-0 left-0 w-full h-1 sm:top-0 sm:left-0 sm:h-full sm:w-1 bg-orange-light;
+  }
+  .btn_activate_mobile::before {
+    content: '';
+    @apply absolute bottom-0 left-0 w-full h-1 bg-white-bone;
+  }
+  .btn_activate_mobile_especial::before {
+    content: '';
+    @apply absolute bottom-0 left-0 w-full h-1 bg-orange-light;
+  }
+}

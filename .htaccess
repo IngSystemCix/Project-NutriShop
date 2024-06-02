@@ -1,0 +1,16 @@
+#IMPORTANTE: Es para activar la sobrescritura de las directrices de nuestro servidor
+
+RewriteEngine On
+
+#NOTA: Ocultar carpetas de nuestro proyecto
+
+Options All -Indexes
+
+#NOTA: para poder escribir rutas amigables
+
+RewriteRule ^([a-zA-Z0-9/ñÑ-]+)$ index.php?view=$1
+
+#IMPORTANTE: Es para mostrar los protocolos 404 y 403 personalizados
+
+ErrorDocument 404 http://localhost/nutri_shop/404.php
+ErrorDocument 403 http://localhost/nutri_shop/403.php
