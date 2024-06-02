@@ -172,7 +172,7 @@ El proceso de actualización del sistema es crucial para mantener la tienda en l
 - ![Static Badge](https://img.shields.io/badge/postcss-%23DD3A0A?style=for-the-badge&logo=postcss&logoColor=%23fff)
 - ![Static Badge](https://img.shields.io/badge/nodedotjs-%235FA04E?style=for-the-badge&logo=nodedotjs&logoColor=%23fff)
 
-## 7. Librerias
+## 7. Librerías
 
 ### phpdotenv
 
