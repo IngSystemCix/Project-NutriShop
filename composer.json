@@ -1,0 +1,17 @@
+{
+    "name": "ingsystemcix/project-nutri-shop",
+    "description": "NutriShop web application",
+    "type": "project",
+    "require": {
+        "illuminate/database": "12.x-dev",
+        "vlucas/phpdotenv": "5.6.x-dev"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "IngSystemCix",
+            "email": "juanromerocollazos@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev"
+}
