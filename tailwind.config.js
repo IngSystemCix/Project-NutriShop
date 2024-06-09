@@ -14,7 +14,8 @@ module.exports = {
         "green-dark": "#00bf63",
         "white-bone": "#eff6ff",
         "dark-gray": "#191919",
-        "red-light": "#ff3131"
+        "red-light": "#ff3131",
+        "gray-dark": "#343434"
       },
       colors: {
         "blue-gray": "#688FAF",
@@ -23,7 +24,8 @@ module.exports = {
         "green-dark": "#00bf63",
         "white-bone": "#eff6ff",
         "dark-gray": "#191919",
-        "red-light": "#ff3131"
+        "red-light": "#ff3131",
+        "gray-dark": "#343434"
       }
     },
   },

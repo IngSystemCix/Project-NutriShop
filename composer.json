@@ -1,6 +1,6 @@
 {
-    "name": "ingsystemcix/project-nutri-shop",
-    "description": "NutriShop web application",
+    "name": "ingsystemcix/proyect-nutri-shop-main",
+    "description": "project webapp",
     "type": "project",
     "require": {
         "illuminate/database": "12.x-dev",
